@@ -1,0 +1,180 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+  background-color: hwb(0 0% 100%);
+  padding: 20px;
+  color:white;
+  
+}
+
+/* Estilos para el listado y los elementos de la barra de navegación */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e9dfdf;
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer
+}
+.mi-boton:hover {
+  background-color: #29b4b9;
+}
+
+/* Media query para hacer la barra de navegación responsiva */
+@media screen and (max-width: 768px) {
+  .navbar ul li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+
+/* Estilo al pasar el mouse sobre el botón */
+#presentacion-section{
+    display: none;
+}
+/* barra de navegacion */
+.container-fluid{
+    background-color: rgb(219, 213, 219);
+    color:hsl(0, 0%, 8%) ;
+    height:100px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.mi-boton:hover {
+  background-color: #29b4b9;
+}
+.navbar-brand img {
+  width: 70px; 
+  height: 70px; 
+  position: absolute;
+  right: 2%;
+  top: 20%;
+}
+.nav-link {
+  position: absolute;
+  left: 2%;
+}
+#contacto-section img{
+  margin-right: 50px;
+}
+/* precentacion */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image1, .image2 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 6s;
+  z-index: 1;
+}
+
+.image1 {
+  left: -100%;
+  animation-name: moveFromLeft;
+  animation-timing-function: ease-in-out;
+}
+
+.image2 {
+  right: -100%;
+  animation-name: moveFromRight;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes moveFromLeft {
+  to {
+      left: 48%;
+  }
+}
+
+@keyframes moveFromRight {
+  to {
+      right: 25%;
+  }
+}
+/* menu seccion */
+#nosotros-section{
+  display: none;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 30px;
+
+}
+#trabajos-section{
+  display: none;
+}
+#contacto-section {
+  display: none;
+  text-align: center;
+  
+}
+
+#exterior-section{
+  display: none;
+}
+
+
+#led-section{
+  display: none;
+}
+#personalizados-section{
+  display: none;
+}
+/* barra de navegacion seccion trabajos */
+
+.nav-link-nav{
+  text-decoration: none;
+  padding: 5px 10px; 
+}
+#container.container-fluid {
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+}
+.nav-link-nav {
+  display: inline;
+  margin-right: 20px; 
+  color: azure;
+  text-align: center;
+}
+
+/* muestra de trabajos carucel */
+.carousel {
+    background-color: hsl(0, 0%, 2%); /* Color de fondo del carrusel */
+}
+  
+.carousel-item img {
+    max-width: 50%; 
+    height: auto; 
+    margin: 0 auto;
+}
+  
+.carousel-control-prev,
+.carousel-control-next {
+     font-size: 40px; 
+}
+
+.footer{
+  background-color: black;
+  color: beige;
+}
+ 
+
+  
+  
+  
+  
+  
+  
